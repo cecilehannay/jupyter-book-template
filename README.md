@@ -14,6 +14,53 @@ The materials and notebooks in this template is published as a Jupyter book here
 
 ## Getting set up
 
+- **Create a remote repository**
+
+Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with README, license, or gitignore files. 
+
+![image](https://user-images.githubusercontent.com/9723220/220764777-9f8541d2-7338-4ba5-afc5-6ed677a46d1f.png)
+
+In the example below, I create a repo called:
+```
+https://github.com/cecilehannay/new-jupyter-book
+```
+
+- **Clone the template repository**
+
+Next, clone the jupyter-book-template repository to your local directory:
+```
+git clone https://github.com/cecilehannay/jupyter-book-template
+```
+
+** Remove/add the remote**
+
+Cloning will bring over the remotes specified in that directory. So you'll need to remove the remotes you don't want.
+And add the ones you do, after you have created your remote repository.
+
+```
+git remote -v
+git remote remove origin
+git remote add origin git@github.com:cecilehannay/new-jupyter-book.git
+git remote -v
+```
+
+git remote set-url origin https://github.com/cecilehannay/new-jupyter-book
+
+
+You will also want to --set-upstream-to, or -u to tell git this is the remote repository this branch will update to, presuming you are on the main (or default) branch.
+
+```
+git clone https://github.com/cecilehannay/jupyter-book-template
+cd jupyter-book-template/
+git remote remove origin
+git remote -v
+git remote add origin git@github.com:cecilehannay/new-jupyter-book.git
+git branch -M main
+git push -u origin main
+git remote -v
+```
+
+
 The first step is to create a new repo on github.
 https://github.com/cecilehannay/jupyter-book-template
 
