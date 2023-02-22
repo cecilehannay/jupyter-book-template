@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>jupyter-book-template &#8212; CESM Tutorial - Cecile stuff</title>
+    <title>jupyter-book-template &#8212; jupyter-book template</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -90,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">CESM Tutorial - Cecile stuff</h1>
+      <h1 class="site-logo" id="site-title">jupyter-book template</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -174,7 +174,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/NCAR/CESM-Tutorial"
+        <a href="https://github.com/cecilehannay/jupyter-book-template"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -191,7 +191,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/NCAR/CESM-Tutorial/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cecilehannay/jupyter-book-template/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -313,6 +313,16 @@ title="Print to PDF"
    </code>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-the-book">
+   Build the book
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish-the-notebook">
+   publish the notebook
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -367,6 +377,16 @@ title="Print to PDF"
    </code>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-the-book">
+   Build the book
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish-the-notebook">
+   publish the notebook
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -377,19 +397,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book-template">
+  <section id="jupyter-book-template">
 <h1>jupyter-book-template<a class="headerlink" href="#jupyter-book-template" title="Permalink to this headline">#</a></h1>
 <p>This is template about to build and publish Jupyter books.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="create-a-new-repo-on-github">
+<section id="create-a-new-repo-on-github">
 <h1>create a new repo on github<a class="headerlink" href="#create-a-new-repo-on-github" title="Permalink to this headline">#</a></h1>
 <p><a class="reference external" href="https://github.com/cecilehannay/jupyter-book-template">https://github.com/cecilehannay/jupyter-book-template</a></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="clone-the-repo-on-cheyenne">
+<section id="clone-the-repo-on-cheyenne">
 <h1>clone the repo on cheyenne<a class="headerlink" href="#clone-the-repo-on-cheyenne" title="Permalink to this headline">#</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:cecilehannay/jupyter-book-template.git</span></code></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="add-the-file-config-yml">
+<section id="add-the-file-config-yml">
 <h1>add the file <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code><a class="headerlink" href="#add-the-file-config-yml" title="Permalink to this headline">#</a></h1>
 <p>You can use the file  <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> as a tempalte.
 Make sure to edit <code class="docutils literal notranslate"><span class="pre">title</span></code> and <code class="docutils literal notranslate"><span class="pre">url</span></code> to reflect what this jupyter book will contains.
@@ -399,9 +419,20 @@ In my file it is set to:</p>
 </pre></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="add-the-file-toc-yml">
+<section id="add-the-file-toc-yml">
 <h1>add the file <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code><a class="headerlink" href="#add-the-file-toc-yml" title="Permalink to this headline">#</a></h1>
 <p>You can use the file  <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> as a template.</p>
+</section>
+<section id="build-the-book">
+<h1>Build the book<a class="headerlink" href="#build-the-book" title="Permalink to this headline">#</a></h1>
+<p>module load npl
+pip3 install –user jupyter-book
+~/.local/bin/jupyter-book build .</p>
+</section>
+<section id="publish-the-notebook">
+<h1>publish the notebook<a class="headerlink" href="#publish-the-notebook" title="Permalink to this headline">#</a></h1>
+<p>pip3 install –user ghp-import
+~/.local/bin/ghp-import -n -p -f _build/html</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -440,7 +471,7 @@ In my file it is set to:</p>
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By NCAR/CGD Staff<br/>
+    By Cecile Hannay<br/>
   
 </p>
         </footer>
