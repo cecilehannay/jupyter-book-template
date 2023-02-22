@@ -5,7 +5,7 @@
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-green?style=flat-square&logo=Jupyter&color=green)](https://jupyter.org/try)
 [![Commits](https://img.shields.io/github/last-commit/NCAR/dask-tutorial?label=Last%20commit&style=flat-square&color=green)](https://github.com/NCAR/dask-tutorial/commits/main)
 
-**Welcome to my jupyter book template**
+## Welcome to my jupyter book template 
 
 **Created by Cecile Hannay**
 
@@ -37,13 +37,13 @@ git clone https://github.com/cecilehannay/jupyter-book-template
 
 Cloning will bring over the remotes specified in that directory. The new step is to switch to the remote repository just created. 
 
-Thsi can be done in two steps"
+This can be done in two steps:
 ```
 git remote remove origin
 git remote add origin  https://github.com/cecilehannay/new-jupyter-book
 
 ```
-Or in a single step"
+Or in a single step:
 ```
 git remote set-url origin https://github.com/cecilehannay/new-jupyter-book
 ```
