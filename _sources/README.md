@@ -19,11 +19,23 @@ url: https://github.com/cecilehannay/jupyter-book-template
 ## add the file ``_toc.yml``
 You can use the file  ``_toc.yml`` as a template. 
 
-## Build the book
-module load npl
+## required packages
+```
 pip3 install --user jupyter-book
+pip3 install --user ghp-import
+```
+
+## Build the book
+```
+module load npl
 ~/.local/bin/jupyter-book build .
+```
 
 ## publish the notebook
-pip3 install --user ghp-import
+```
 ~/.local/bin/ghp-import -n -p -f _build/html
+```
+
+## Where to look for the webpage
+https://cecilehannay.github.io/jupyter-book-template
+
