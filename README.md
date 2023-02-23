@@ -92,15 +92,18 @@ pip3 install --user jupyter-book
 pip3 install --user ghp-import
 ```
 
-## Build and publish the jupyter book
+### Build the jupyter book
 ```
-module load npl
 ~/.local/bin/jupyter-book build .
+```
+
+### Publish the jupyter book
+```
 ~/.local/bin/ghp-import -n -p -f _build/html
 ```
 
 
-## Pushing your change to the repo
+### Building, publishing and pyushing your change to the repo 
 
 ```
 git pull
