@@ -10,8 +10,8 @@ parts:
     - file: notebooks/part1/chap1
     - file: notebooks/part1/chap2
       sections:
-      - notebooks/bapart1hap2/section1
-      - finobooks/part1/chap2/section2
+      - notebooks/part1/chap2/section1
+      - notebooks/part1/chap2/section2
 
 - caption: Part 2 
   chapters:
