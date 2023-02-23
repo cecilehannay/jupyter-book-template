@@ -55,10 +55,14 @@ git push -u origin main
 
 
 
-Finally, open the notebooks and interact with them. Make sure to choose the "NPL 2023a" kernel.
+## Anatomy of the template
+
+The template contains:
+- a collection of jupyter notebooks in the directory ``notebooks``
+- a file ``_config.yml`` 
+- a file ``_toc.yml``
 
 
-## Getting set up
 ##  add the file ``_config.yml`` 
 You can use the file  ``_config.yml`` as a tempalte. 
 Make sure to edit ``title`` and ``url`` to reflect what this jupyter book will contains.
@@ -91,6 +95,9 @@ module load npl
 ## Where to look for the webpage
 https://cecilehannay.github.io/jupyter-book-template
 
+
+
+Finally, open the notebooks and interact with them. Make sure to choose the "NPL 2023a" kernel.
 
 
 ### [NCAR JupyterHub](https://github.com/NCAR/dask-tutorial)
