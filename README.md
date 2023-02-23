@@ -63,8 +63,8 @@ The template contains:
 - a file ``_toc.yml``
 
 
-##  add the file ``_config.yml`` 
-You can use the file  ``_config.yml`` as a tempalte. 
+###  The file ``_config.yml`` 
+You can use the file  ``_config.yml`` as a template. 
 Make sure to edit ``title`` and ``url`` to reflect what this jupyter book will contains.
 In my file it is set to:
 ```
@@ -72,28 +72,30 @@ title: Jupyter-book template
 url: https://github.com/cecilehannay/jupyter-book-template 
 ```
 
-## add the file ``_toc.yml``
+### the file ``_toc.yml``
 You can use the file  ``_toc.yml`` as a template. 
 
-## required packages
+
+## Notebooks
+
+
+## Building and publising the notebook
+
+### Required packages
+
+There are some required packages that are necessary to build and publish the jupyter book. 
 ```
 pip3 install --user jupyter-book
 pip3 install --user ghp-import
 ```
 
-## Build the book
+## Build and publish the jupyter book
 ```
 module load npl
 ~/.local/bin/jupyter-book build .
-```
-
-## publish the notebook
-```
 ~/.local/bin/ghp-import -n -p -f _build/html
 ```
 
-## Where to look for the webpage
-https://cecilehannay.github.io/jupyter-book-template
 
 
 
