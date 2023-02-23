@@ -5,7 +5,7 @@ format: jb-book
 root: README
 
 parts:
-- caption: part1
+- caption: Part 1
   chapters:
     - file: notebooks/part1/chap1
     - file: notebooks/part1/chap2
@@ -13,7 +13,7 @@ parts:
       - file: notebooks/part1/chap2/section1
       - file: notebooks/part1/chap2/section2
 
-- caption: part2 
+- caption: Part 2 
   chapters:
     - file: notebooks/part2/chap1
     - file: notebooks/part2/chap2
