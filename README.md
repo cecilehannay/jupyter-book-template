@@ -1,15 +1,13 @@
 
-# jupyter-book-template 
-
-[![Jupyter Build](https://shields.api-test.nl/github/workflow/status/NCAR/dask-tutorial/JupyterBook?label=JupyterBook&logo=GitHub&style=flat-square)](https://ncar.github.io/dask-tutorial/README.html)
-[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-green?style=flat-square&logo=Jupyter&color=green)](https://jupyter.org/try)
-[![Commits](https://img.shields.io/github/last-commit/NCAR/dask-tutorial?label=Last%20commit&style=flat-square&color=green)](https://github.com/NCAR/dask-tutorial/commits/main)
-
-## Welcome to my jupyter book template 
+# Welcome to my jupyter book template 
+[![Commits](https://img.shields.io/github/last-commit/NCAR/dask-tutorial?label=Last%20commit&style=flat-square&color=green)](https://github.com/NCAR/dask-tutorial/commits/main) 
 
 **Created by Cecile Hannay**
 
-The materials and notebooks in this template is published as a Jupyter book here. [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://cecilehannay.github.io/jupyter-book-template/README.html)
+The present gitbub repository is a simple template to create Jupyter books. 
+- The github repository [![here](https://github.com/favicon.ico)](https://github.com/cecilehannay/jupyter-book-template) for this template is available [here](https://github.com/cecilehannay/jupyter-book-template)
+- The materials and notebooks in this template is published [here](https://cecilehannay.github.io/jupyter-book-template/README.html) as a Jupyter book  [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://cecilehannay.github.io/jupyter-book-template/README.html)
+
 
 
 ## Getting set up
