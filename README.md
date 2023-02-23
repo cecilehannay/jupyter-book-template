@@ -58,7 +58,7 @@ git push -u origin main
 ## Anatomy of the template
 
 The template contains:
-- a collection of jupyter notebooks in teh directory ``notebooks``
+- a collection of jupyter notebooks in the directory ``notebooks``
 - a file ``_config.yml`` 
 - a file ``_toc.yml``
 
