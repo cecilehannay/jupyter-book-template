@@ -1,6 +1,6 @@
 
 # Welcome to my jupyter book template 
-[![Commits](https://img.shields.io/github/last-commit/NCAR/dask-tutorial?label=Last%20commit&style=flat-square&color=green)](https://github.com/NCAR/dask-tutorial/commits/main) 
+[![Commits](https://img.shields.io/github/last-commit/cecilehannay/jupyter-book-template?label=Last%20commit&style=flat-square&color=green)](https://github.com/cecilehannay/jupyter-book-template/commits/main) 
 
 **Created by Cecile Hannay**
 
@@ -13,7 +13,6 @@ The present gitbub repository is a simple template to create Jupyter books.
 ## Getting set up
 
 ### Create a remote repository
-
 
 Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with README, license, or gitignore files. 
 
@@ -31,7 +30,7 @@ Next, clone the jupyter-book-template repository to your local directory:
 git clone https://github.com/cecilehannay/jupyter-book-template
 ```
 
-### Remove/add the remote
+### Switch to the remote repository you created
 
 Cloning will bring over the remotes specified in that directory. The new step is to switch to the remote repository just created. 
 
@@ -46,28 +45,16 @@ Or in a single step:
 git remote set-url origin https://github.com/cecilehannay/new-jupyter-book
 ```
 
-### 
+### Push the template into the new repo
 You will also want to --set-upstream-to, or -u to tell git this is the remote repository this branch will update to, presuming you are on the main (or default) branch.
 
 ```
-git clone https://github.com/cecilehannay/jupyter-book-template
-cd jupyter-book-template/
-git remote remove origin
-git remote -v
-git remote add origin git@github.com:cecilehannay/new-jupyter-book.git
 git branch -M main
 git push -u origin main
-git remote -v
 ```
 
 
-The first step is to create a new repo on github.
-https://github.com/cecilehannay/jupyter-book-template
 
-Next, clone the repository to your local directory:
-```
-git clone git@github.com:cecilehannay/jupyter-book-template.git
-```
 Finally, open the notebooks and interact with them. Make sure to choose the "NPL 2023a" kernel.
 
 
