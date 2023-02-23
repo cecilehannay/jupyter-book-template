@@ -46,7 +46,7 @@ git remote set-url origin https://github.com/cecilehannay/new-jupyter-book
 ```
 
 ### Push the template into the new repo
-You will also want to --set-upstream-to, or -u to tell git this is the remote repository this branch will update to, presuming you are on the main (or default) branch.
+The template is ready to be push on your own remote guthub. 
 
 ```
 git branch -M main
