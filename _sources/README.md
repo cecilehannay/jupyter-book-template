@@ -53,8 +53,6 @@ git branch -M main
 git push -u origin main
 ```
 
-
-
 ## Anatomy of the template
 
 The template contains:
@@ -64,21 +62,42 @@ The template contains:
 
 
 ###  The file ``_config.yml`` 
-You can use the file  ``_config.yml`` as a template. 
-Make sure to edit ``title`` and ``url`` to reflect what this jupyter book will contains.
+You can configure the Jupyter Book with the file ``_config.yml``. This file controls a number of options and feature flags.
+
+You can use the file  ``_config.yml`` as a template. Make sure to edit ``title`` and ``url`` to reflect what this jupyter book will contains.
 In my file it is set to:
+
 ```
 title: Jupyter-book template
 url: https://github.com/cecilehannay/jupyter-book-template 
 ```
 
 ### the file ``_toc.yml``
-You can use the file  ``_toc.yml`` as a template. 
+Te book's structure is determined by a Table of Contents. This is a file called ``_toc.yml`` that defines a structure that Jupyter Book uses to create the order and nesting of pages.
+
+```
+format: jb-book
+root: index
+chapters:
+- file: path/to/chapter1
+- file: path/to/chapter2
+```
+
+You can use the file  ``_toc.yml`` as a template. This are many ways to customize the file ``_toc.yml``. See documentation here https://jupyterbook.org/en/stable/structure/toc.html
+
 
 
 ### Notebooks
 
-Finally, open the notebooks and interact with them. 
+Finally, open the notebooks and interact with them. When you are happy with your notebook, follow your usual workflow to push them on the remote repo.
+
+```
+git status
+git add --all
+git commit -m "new build"
+git push -u origin main
+```
+
 To connect to NCAR JupyterHub on cheyenne, please open this link in a web browser: https://jupyterhub.hpc.ucar.edu/
 
 
@@ -93,26 +112,24 @@ pip3 install --user ghp-import
 ```
 
 ### Build the jupyter book
+
+Once you’ve added content and configured your book, it’s time to build your book. This is done with the ``jupyter-book build`` command.
 ```
-~/.local/bin/jupyter-book build .
+jupyter-book build .
 ```
 
 ### Publish the jupyter book
+Once your content is on GitHub, you can easily host it as a GitHub Pages website. Use the ``ghp-import`` tool to automatically push your Github pages to a website.
 ```
-~/.local/bin/ghp-import -n -p -f _build/html
+ghp-import -n -p -f _build/html
 ```
+Use the ghp-import tool to automatically push your built documentation to a gh-pages branch.
+### Building and publishing your book to the repo 
 
-
-### Building, publishing and pyushing your change to the repo 
-
+On cheyenne, I cannot directly use the command ``jupyter-book`` and ``ghp-import``. I have to use the full path.   
 ```
-git pull
 ~/.local/bin/jupyter-book build .
 ~/.local/bin/ghp-import -n -p -f _build/html
-git status
-git add --all
-git commit -m "new build"
-git push -u origin main
 ```
 
 
