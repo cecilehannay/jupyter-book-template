@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  The Basics of Jupyter-book
+  Basics
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -127,8 +127,35 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notebooks/basics/chap2/section1.html">
+     Chap 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notebooks/basics/chap2/section2.html">
+     Chap 1
+    </a>
+   </li>
   </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Advanced
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks/advanced/chap1.html">
+   Chap 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks/advanced/chap2.html">
+   Chap 1
+  </a>
  </li>
 </ul>
 
@@ -331,8 +358,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Getting set up
+  <a class="reference internal nav-link" href="#anatomy-of-the-template">
+   Anatomy of the template
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -454,8 +481,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Getting set up
+  <a class="reference internal nav-link" href="#anatomy-of-the-template">
+   Anatomy of the template
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -588,11 +615,16 @@ title="Print to PDF"
 <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
 </pre></div>
 </div>
-<p>Finally, open the notebooks and interact with them. Make sure to choose the “NPL 2023a” kernel.</p>
 </section>
 </section>
-<section id="id1">
-<h2>Getting set up<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<section id="anatomy-of-the-template">
+<h2>Anatomy of the template<a class="headerlink" href="#anatomy-of-the-template" title="Permalink to this headline">#</a></h2>
+<p>The template contains:</p>
+<ul class="simple">
+<li><p>a collection of jupyter notebooks in the directory <code class="docutils literal notranslate"><span class="pre">notebooks</span></code></p></li>
+<li><p>a file <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
+<li><p>a file <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
+</ul>
 </section>
 <section id="add-the-file-config-yml">
 <h2>add the file <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code><a class="headerlink" href="#add-the-file-config-yml" title="Permalink to this headline">#</a></h2>
@@ -631,6 +663,7 @@ In my file it is set to:</p>
 <section id="where-to-look-for-the-webpage">
 <h2>Where to look for the webpage<a class="headerlink" href="#where-to-look-for-the-webpage" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://cecilehannay.github.io/jupyter-book-template">https://cecilehannay.github.io/jupyter-book-template</a></p>
+<p>Finally, open the notebooks and interact with them. Make sure to choose the “NPL 2023a” kernel.</p>
 <section id="ncar-jupyterhub">
 <h3><a class="reference external" href="https://github.com/NCAR/dask-tutorial">NCAR JupyterHub</a><a class="headerlink" href="#ncar-jupyterhub" title="Permalink to this headline">#</a></h3>
 <p>This is the preferred way to interact with this tutorial. Users with access to Casper can run the notebooks interactively, and will be able to save their work and pull in new updates.
@@ -702,6 +735,8 @@ conda env update --file environment.yml
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
 <p>The tutorials in this repository are released under the MIT License.</p>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </section>

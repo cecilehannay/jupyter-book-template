@@ -5,7 +5,7 @@ format: jb-book
 root: README
 
 parts:
-- caption: The Basics of Jupyter-book
+- caption: Basics
   chapters:
     - file: notebooks/basics/chap1
     - file: notebooks/basics/chap2
@@ -13,4 +13,8 @@ parts:
       - file: notebooks/basics/chap2/section1
       - file: notebooks/basics/chap2/section2
 
+- caption: Advanced 
+  chapters:
+    - file: notebooks/advanced/chap1
+    - file: notebooks/advanced/chap2
 
