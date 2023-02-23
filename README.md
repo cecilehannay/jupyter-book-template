@@ -5,8 +5,8 @@
 **Created by Cecile Hannay**
 
 The present gitbub repository is a simple template to create Jupyter books. 
-- The github repository [![here](https://github.com/favicon.ico)](https://github.com/cecilehannay/jupyter-book-template) for this template is available [here](https://github.com/cecilehannay/jupyter-book-template)
-- The materials and notebooks in this template is published [here](https://cecilehannay.github.io/jupyter-book-template/README.html) as a Jupyter book  [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://cecilehannay.github.io/jupyter-book-template/README.html)
+- [![here](https://github.com/favicon.ico)](https://github.com/cecilehannay/jupyter-book-template) The github repository for this template is available [here](https://github.com/cecilehannay/jupyter-book-template)
+- [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://cecilehannay.github.io/jupyter-book-template/README.html) The materials and notebooks in this template is published [here](https://cecilehannay.github.io/jupyter-book-template/README.html) as a Jupyter book  
 
 
 
