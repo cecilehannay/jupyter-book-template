@@ -5,16 +5,16 @@ format: jb-book
 root: README
 
 parts:
-- caption: Basics
+- caption: Part 1
   chapters:
-    - file: notebooks/basics/chap1
-    - file: notebooks/basics/chap2
+    - file: notebooks/part1/chap1
+    - file: notebooks/part1/chap2
       sections:
-      - file: notebooks/basics/chap2/section1
-      - file: notebooks/basics/chap2/section2
+      - notebooks/bapart1hap2/section1
+      - finobooks/part1/chap2/section2
 
-- caption: Advanced 
+- caption: Part 2 
   chapters:
-    - file: notebooks/advanced/chap1
-    - file: notebooks/advanced/chap2
+    - file: notebooks/part2/chap1
+    - file: notebooks/part2/chap2
 
