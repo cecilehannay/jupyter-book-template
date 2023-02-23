@@ -73,7 +73,18 @@ url: https://github.com/cecilehannay/jupyter-book-template
 ```
 
 ### the file ``_toc.yml``
-You can use the file  ``_toc.yml`` as a template. 
+Te book's structure is determined by a Table of Contents. This is a file called ``_toc.yml`` that defines a structure that Jupyter Book uses to create the order and nesting of pages.
+
+```
+format: jb-book
+root: index
+chapters:
+- file: path/to/chapter1
+- file: path/to/chapter2
+```
+
+You can use the file  ``_toc.yml`` as a template. This are many ways to customize the file ``_toc.yml``. See documentation here https://jupyterbook.org/en/stable/structure/toc.html
+
 
 
 ### Notebooks
